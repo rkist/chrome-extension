@@ -1,24 +1,26 @@
 <html>
-<body style="min-width: 450px; min-height: 200px; margin: 15px;">
-    <div style="display: flex; align-items: center;">
-        <img src="icon.png" alt="Icon" style="margin-right: 10px;">
-        <div style="margin-left: 10px; width: 100%;">
-            <h3 style="margin-top: 0; color: #4285f4;">Import Bookmarks</h3>
-            <form style="width: 100%;">
-            <div style="margin-bottom: 15px;">
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="icon.png" alt="Icon" class="icon">
+        <div class="content">
+            <h3>Import Bookmarks</h3>
+            <form>
+            <div class="form-group">
                 <label for="directoryName" style="display: block; font-weight: bold; margin-bottom: 5px;">Directory name:</label>
                 <input type="text" id="directoryName" name="directoryName" required 
                    style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ddd; box-sizing: border-box;">
             </div>
-            <div style="margin-bottom: 20px;">
+            <div class="form-group">
                 <label for="url" style="display: block; font-weight: bold; margin-bottom: 5px;">URL:</label>
                 <input type="url" id="url" name="url" required 
                    style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ddd; box-sizing: border-box;">
             </div>
-            <div style="text-align: right;">
-                <button type="button" 
-                    style="padding: 10px 20px; background-color: #4285f4; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.2);"
-                    onclick="logFormValues()">
+            <div class="button-container">
+                <button type="button" class="import-button" id="importButton"
+                    style="padding: 10px 20px; background-color: #4285f4; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
                 Import
                 </button>
             </div>
