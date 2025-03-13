@@ -3,12 +3,12 @@ console.log("script log!")
 document.addEventListener("DOMContentLoaded", function () {
     const importButton = document.getElementById("importButton");
     if (importButton) {
-        importButton.addEventListener("click", logFormValues);
+        importButton.addEventListener("click", importButtonClicked);
     }
 });
 
-function logFormValues() {
-    console.log("log values");
+function importButtonClicked() {
+    console.log("Import started");
 
     const directoryName = document.getElementById('directoryName').value;
     const url = document.getElementById('url').value;
