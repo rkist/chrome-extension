@@ -1,0 +1,10 @@
+{
+    "name": "Bookmarks Extension",
+    "description": "Bookmarks Extension",
+    "version": "0.1",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "start.html",
+      "default_icon": "icon.png"
+    }
+  }
