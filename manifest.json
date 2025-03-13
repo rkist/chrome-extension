@@ -9,7 +9,8 @@
     },
     "permissions": [
         "storage",
-        "activeTab"
+        "activeTab", 
+        "bookmarks"
       ],
       "host_permissions": [
         "https://infra-api.apps.core-prd.habitat.zone/*"
