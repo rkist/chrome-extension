@@ -1,21 +1,5 @@
 console.log("script log!")
 
-const directoryNameInput = document.getElementById("directoryName");
-const urlInput = document.getElementById("url");
-
-directoryNameInput.value = sessionStorage.getItem("directoryName") || "";
-urlInput.value = sessionStorage.getItem("url") || "";
-
-directoryNameInput.addEventListener("input", () => {
-    sessionStorage.setItem("directoryName", directoryNameInput.value);
-    // console.log("directoryNameInput.value", directoryNameInput.value);
-});
-
-urlInput.addEventListener("input", () => {
-    sessionStorage.setItem("url", urlInput.value);
-    // console.log("urlInput.value", urlInput.value);
-});
-
 document.addEventListener("DOMContentLoaded", function () {
     const importButton = document.getElementById("importButton");
     if (importButton) {
