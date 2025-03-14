@@ -12,7 +12,8 @@
         "bookmarks"
       ],
       "host_permissions": [
-        "https://infra-api.apps.core-prd.habitat.zone/*"
+        "https://infra-api.apps.core-prd.habitat.zone/*",
+        "https://infra-api.apps.core-frn.habitat.zone/*"
       ],
         "background": {
             "service_worker": "script/background.js"
