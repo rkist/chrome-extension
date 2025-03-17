@@ -4,25 +4,46 @@
 </head>
 <body>
     <div class="container">
-        <img src="/img/icon.png" alt="Icon" class="icon">
+        <img src="/img/qa.png" alt="Icon" class="icon">
         <div class="content">
-            <h3>Import Bookmarks</h3>
+            <h3>Import Bookmars</h3>
             <form>
             <div class="form-group">
                 <label for="directoryName" style="display: block; font-weight: bold; margin-bottom: 5px;">Directory name:</label>
                 <input type="text" id="directoryName" name="directoryName" required 
                    style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ddd; box-sizing: border-box;"
-                   placeholder="Bookmarks">
+                   placeholder="5A">
+            </div>
+            <div class="form-checkboxes" style="display: none;">
+                <!-- USE IT TO DEFINE SOME PREDEFINED ENVIRONMENTS. WE CAN LOAD THEM FROM ANOTHER URL -->
+                <div class="checkbox-group" style="margin-bottom: 15px;">
+                    <div style="margin-bottom: 8px;">
+                        <input type="checkbox" id="general" name="environment" value="www.quintoandar.com.br">
+                        <label for="general">General</label>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <input type="checkbox" id="developer" name="environment" value="https://infra-api.apps.core-prd.habitat.zone/bookmarks">
+                        <label for="developer">Developer</label>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <input type="checkbox" id="ops" name="environment" value="www.quintoandar.com.br">
+                        <label for="ops">Ops team</label>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <input type="checkbox" id="cx" name="environment" value="www.quintoandar.com.br">
+                        <label for="cx">Cx team</label>
+                    </div>
+                </div>
             </div>
             <div class="form-group">
-                <label for="url" style="display: block; font-weight: bold; margin-bottom: 5px;">URL:</label>
+                <label for="url" style="display: block; font-weight: bold; margin-bottom: 5px;">Custom URL:</label>
                 <input type="url" id="url" name="url" required 
                    style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ddd; box-sizing: border-box;"
                    placeholder="https://infra-api.apps.core-prd.habitat.zone/bookmarks">
             </div>
             <div class="button-container">
                 <button type="button" class="import-button" id="importButton"
-                    style="padding: 10px 20px; background-color: #4285f4; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+                    style="margin-top: 20px;padding: 10px 20px; background-color: #4285f4; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
                 Import
                 </button>
             </div>
