@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
 function importButtonClicked() {
     console.log("Import started");
 
+    const feedbackMsg = document.getElementById('feedbackMessage');
+    feedbackMsg.textContent = "Importing bookmarks...";
     const directoryName = document.getElementById('directoryName').value;
     const url = document.getElementById('url').value;
 
@@ -61,7 +63,9 @@ function importButtonClicked() {
                     processBookmarkStructure(folder.id, data);
                 }
                 );
+                feedbackMsg.textContent = "Imported bookmarks successfully";
             } else {
+                feedbackMsg.textContent = "Error fetching data";
                 console.error("Error fetching data:", response.error);
             }
         }

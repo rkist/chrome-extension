@@ -20,13 +20,19 @@
                    style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ddd; box-sizing: border-box;"
                    placeholder="https://infra-api.apps.core-prd.habitat.zone/bookmarks">
             </div>
-            <div class="button-container">
-                <button type="button" class="import-button" id="importButton"
-                    style="padding: 10px 20px; background-color: #4285f4; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
-                Import
-                </button>
+            <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
+                <div id="feedback" style="margin-top: 15px; border-radius: 4px;">
+                    <p id="feedbackMessage" style="margin: 0;"></p>
+                </div>
+                <div class="button-container">
+                    <button type="button" class="import-button" id="importButton"
+                        style="padding: 10px 20px; background-color: #4285f4; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+                    Import
+                    </button>
+                </div>
             </div>
             </form>
+            
         </div>
     </div>
     <script src="script/script.js"></script>
